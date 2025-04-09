@@ -1,0 +1,29 @@
+.searchTreeStyle{
+    width: 100%;
+    :global{
+        .cityIcon{
+            color: #9EB1C2;
+            margin-right: 5px;
+        }
+        .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected{
+            background-color: transparent;
+            color: #2A98FF;
+            .cityIcon{
+                color: #2A98FF;
+            }
+            .cityTitle{
+                color: #2A98FF;
+            }
+        }
+        .ant-tree-switcher{
+            display: inline-block;
+        }
+        .ant-tree-treenode{
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+}

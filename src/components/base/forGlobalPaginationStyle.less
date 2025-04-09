@@ -1,0 +1,56 @@
+// 全局覆盖分页按钮样式，修复 94 按钮样式错乱问题
+
+.ant-pagination.mini .ant-pagination-item:not(.ant-pagination-item-active) {
+    border-color: #d9d9d9;
+}
+
+.ant-pagination.mini .ant-pagination-item {
+    min-width: 24px;
+    height: 24px;
+    margin: 0 4px;
+    line-height: 22px;
+}
+
+.ant-pagination.mini .ant-pagination-next {
+    min-width: 24px;
+    height: 24px;
+    margin: 0 4px;
+    line-height: 22px;
+}
+
+.ant-pagination.mini .ant-pagination-prev {
+    min-width: 24px;
+    height: 24px;
+    margin: 0 4px;
+    line-height: 22px;
+}
+
+.ant-pagination.mini .ant-pagination-prev .ant-pagination-item-link {
+    background-color: transparent;
+    // background-color: null;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 46% auto;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAPFBMVEUAAADe4OXg4OXe4OXf4Obd3+Te4OXe4eXf4eXe4Obe4ebd4OXe4OXe4OXe4eXe4OXe4OXe4uXh4efe4OXCOrTvAAAAE3RSTlMA/DF9YfqPhnVaVOeVinBsZ04rvbJd0gAAAF1JREFUGNNt0TsWgCAMRFEiooDy0bf/vVpYOXHKWyQnk/BJO5ag2UgOd6yqRayoZVjVBgy1FbJaMaJaNXa1JbEFh0YTkpG6XDOhe+0wvUY5U0qSOu3yepLuH33f8QChQgNW7eNmCAAAAABJRU5ErkJggg==);
+}
+
+.ant-pagination.mini .ant-pagination-next .ant-pagination-item-link {
+    border-color: #d9d9d9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 46% auto;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAVFBMVEUAAADj4/L////e4OXd3+Te4OXe4OTe4ebd3+Xe3+Xe4OXd4OTd4OTd4OXe4OXe4OXe4Obe4ebe4eTf4uXf4ubg4Ofg4OXi4ube4+ng4Obd3+Td4OVl+SxRAAAAG3RSTlMACQTr+fXlZfHCvLWtpp6VjVxWT0dBOjQuKWlgpUdzAAAAWElEQVQY04XRRw7AMAhEUTtu6b3P/e8ZeRn9hVk+CQGDyZXiYlCvtFJn+Y06ye/UUeEAVoPCSe1VX9RO7obaVu6hNooWSGQ7B3ElLs8zGUg5upRDBrr/Oz4kEQT1hXfNhgAAAABJRU5ErkJggg==);
+}
+
+.ant-table {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.ant-pagination.mini .ant-pagination-prev.ant-pagination-disabled .ant-pagination-item-link {
+    border-color: #d9d9d9;
+}
+
+// 去掉左侧边栏的 。。。 样式
+.ant-tabs-nav-more {
+    display: none !important;
+}

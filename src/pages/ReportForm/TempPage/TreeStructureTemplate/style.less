@@ -1,0 +1,137 @@
+.assistbtn {
+  min-width: unset;
+  padding: 0 8px;
+  margin: 0 -10px 0 0;
+  color: rgba(62, 128, 214, 1);
+}
+
+.type_management_custom {
+  // height: calc(100vh);
+  margin-bottom: 6px;
+  overflow-y: hidden;
+  border-radius: 6px;
+
+  .table_center {
+    margin-left: 0px;
+  }
+
+  :global {
+    .ant-form-item-label {
+      width: 93px !important;
+    }
+
+    .ant-descriptions-small .ant-descriptions-row>th,
+    .ant-descriptions-small .ant-descriptions-row>td {
+      height: auto;
+    }
+
+    .ant-descriptions-item-container .ant-descriptions-item-label,
+    .ant-descriptions-item-container .ant-descriptions-item-content {
+      line-height: 32px;
+    }
+  }
+}
+
+
+// .type_management_content{ //11111111111111111111111
+//   :global{
+//     .ant-row{
+//       justify-content: left;
+//     }
+//     .ant-col-18{
+//       flex: auto;
+//     }
+//   }
+// }
+.tank_type_management_custom_overflow {
+  margin-top: 10px;
+}
+
+.tank_type_mangement_content {
+
+  ///1111111111111111111111111111111
+  :global {
+    .ant-descriptions-item-content {
+      line-height: 1.5715 !important;
+
+      >div {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+    }
+
+    .ant-table-tbody>tr:nth-child(even)>td {
+      background: #fff;
+    }
+
+    .ant-table-tbody>tr:nth-child(2n+1)>td {
+      background: #f8fbff;
+    }
+  }
+}
+
+.tank_new_report_type_management {
+  :global {
+    .ant-input-textarea-show-count {
+      .ant-input {
+        height: 120px !important;
+        padding-bottom: 24px;
+      }
+    }
+
+    .ant-input-textarea-show-count::after {
+      display: block;
+      text-align: right;
+      padding-right: 6px;
+      margin: -19px 20px 0px 1px;
+      background: #fff;
+      float: none;
+    }
+
+    .ant-modal-body {
+      padding: 24px 24px 0;
+    }
+  }
+}
+
+.spinexample {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.cardAffix {
+  display: flex;
+  position: absolute;
+  z-index: 12;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(240, 240, 240, 1);
+  padding: 16px;
+  background: white;
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .card-affix-primary {
+    position: absolute;
+    padding: 0 16px;
+    height: 64px;
+    right: 0;
+    top: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.spinCss {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  border-radius: 4px;
+}

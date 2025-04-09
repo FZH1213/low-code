@@ -1,0 +1,26 @@
+.wb-descriptions .ant-descriptions-item {
+  height: 40px;
+}
+.wb-descriptions .ant-descriptions-item-label,
+.wb-descriptions .ant-descriptions-item-content {
+  display: flex;
+  align-items: center;
+}
+.wb-descriptions .ant-descriptions-item-label {
+  justify-content: flex-end;
+  font-weight: bold;
+  width: 128px;
+}
+.wb-descriptions .ant-descriptions-item-content .ant-form-item {
+  margin-bottom: unset;
+}
+.wb-descriptions .ant-descriptions-item-content-wrapper {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  padding: 0 8px;
+  background: #efefef;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}

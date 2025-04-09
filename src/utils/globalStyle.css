@@ -1,0 +1,24 @@
+.GTable .ant-table-small .ant-table-thead .ant-table-cell {
+  padding: 16px 8px;
+}
+.GTable .ant-table-small .ant-image {
+  font-size: 0px;
+  margin: -5px 0 -12px;
+}
+.GTable .ant-table-small .ant-table-tbody > tr > td {
+  padding: 15px 8px;
+}
+.GContainer .ant-pro-page-container-children-content {
+  margin: 16px;
+}
+.GContent {
+  background: #fff;
+  padding: 16px;
+  margin-top: 16px;
+}
+.GButton {
+  margin-bottom: 16px;
+}
+.GButton .ant-btn {
+  margin-right: 8px;
+}

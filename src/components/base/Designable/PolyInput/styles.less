@@ -1,0 +1,32 @@
+@import '~antd/lib/style/themes/default.less';
+
+.dn-poly-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .dn-poly-input-content {
+    display: flex;
+    flex-grow: 2;
+    margin-right: 2px;
+
+    .@{ant-prefix}-select {
+      width: 100%;
+    }
+
+    .@{ant-prefix}-input-number {
+      width: 100%;
+    }
+  }
+
+  .dn-poly-input-controller {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    border: 1px solid @border-color-base;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}

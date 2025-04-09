@@ -1,0 +1,118 @@
+//使表单的行居中对齐
+.rowStyle{
+    margin-left: -6% ;
+    padding: 0 50px;
+}
+
+.rowStylee{
+    margin-left: 0 ;
+    padding: 0 15px 0 30px;
+}
+
+.cancel{
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+        border: 0px solid;
+    }
+}
+
+  //普通的button按钮样式
+.ordinaryButton{ 
+    margin-left: 0;
+    border: 1px solid #689CDF;
+    border-radius:2px;
+    color:#689CDF;
+    width:120px;
+    height:32px;
+}
+// 底部按钮样式
+.bottomButton{
+    margin-left: 0;
+    border-radius:2px;
+    width:96px;
+    margin-right: 16px;
+    height:32px;
+}
+
+
+.cardwrapper {
+    .ant-card-body {
+        padding-left: 16px;
+    }
+    
+     .ant-card-head{
+        padding: 0 24px;
+        min-height: 39px;
+        color: #30366f;
+        font-size: 16px;
+        font-weight: bold;
+    
+        .ant-card-head-title{
+            color: #30366f;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 9px 0;
+        }
+    }
+
+    // 日历表单的置灰效果
+    .ant-picker.ant-picker-disabled {
+        background: #f5f5f5;
+    }
+    // 不可编辑输入框样式
+
+    .ant-input[disabled] {
+        cursor: text !important;
+        background: #f5f5f5 !important
+    }
+    .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        background: #f5f5f5;
+    }
+    // input外包装层统一为32px
+    // .ant-form-item-control-input-content{
+    //     height: 32px;
+    // }
+
+    // 这两个会影响全局
+    // 占满外包层
+    // .ant-input , .ant-select-selector{
+    //     height: 100%;
+    // }
+    // 文本域的padding
+    .ant-input-textarea .ant-input {
+        padding: 6px 11px;
+    }
+
+    .ant-input-textarea .ant-input{
+        resize: vertical !important;
+    }
+
+    .ant-form-item-label{
+    padding-right: 12px;//添加label右边距
+  }
+
+//   改变table表单的分页的大小，由默认的32px改为28px
+    .ant-pagination{
+        .ant-pagination-prev,
+        .ant-pagination-next,
+        .ant-pagination-item {
+            min-width: 28px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+        }
+        // 每条多少页的框
+        .ant-select-selector{
+            height: 28px;
+        }
+        .ant-select-selection-item{
+            line-height: 28px;
+        }
+        // 直接跳转的框
+        .ant-pagination-options-quick-jumper>input{
+            height: 28px;
+        }
+    }
+    
+}
+
+

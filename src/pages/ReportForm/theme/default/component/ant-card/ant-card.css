@@ -1,0 +1,100 @@
+/************ ant-card *************/
+.webroot {
+  /* 卡片标题扩展（并非ant原生类） */
+  /* 卡片辅助工具栏 */
+}
+.webroot .ant-card-headborder .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+.webroot .ant-card-head {
+  border-bottom: 0;
+  padding: 0 20px;
+  color: #30366f;
+  font-size: 15px;
+  font-weight: 700;
+}
+.webroot .ant-card-head + .ant-card-body {
+  padding-top: 0;
+}
+.webroot .ant-card-head .ant-card-extra {
+  padding: 0;
+}
+.webroot .ant-card-body {
+  /* padding: 16px 16px 16px 16px; // 3月17日 zmx 改为 下面，为了减少card区域的底部空白 */
+  padding: 16px 16px 4px 16px;
+}
+.webroot .ant-card-bordered {
+  border: 0;
+  border-radius: 6px;
+}
+.webroot .ant-card-title-wrapper {
+  position: relative;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+.webroot .ant-card-title-text {
+  font-size: 14px;
+  margin-bottom: unset;
+}
+.webroot .ant-card-title-tip {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.webroot .card-assist {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  position: relative;
+}
+.webroot .card-assist .card-assist-buttons .ant-btn {
+  margin: 0 4px;
+}
+.webroot .card-assist .card-assist-buttons .ant-btn:first-child {
+  margin-left: 0;
+}
+.webroot .card-assist .card-assist-other {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.webroot .card-corner-assist {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px 20px;
+}
+.webroot .card-affix {
+  display: flex;
+  position: absolute;
+  z-index: 12;
+  justify-content: flex-start;
+  border-top: 1px solid #f0f0f0;
+  padding: 16px;
+  background: white;
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.webroot .card-affix .card-affix-primary {
+  position: absolute;
+  padding: 0 16px;
+  height: 64px;
+  right: 0;
+  top: 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.webroot .wb-flex-card {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+}
+.webroot .wb-flex-card .ant-card-body {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex: 1;
+}

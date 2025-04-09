@@ -1,0 +1,74 @@
+.tinyNumber {
+    height: 38px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+    color: rgba(0, 0, 0, .85);
+    font-size: 30px;
+    line-height: 38px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.spinCss {
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.cardAffix {
+    display: flex;
+    position: absolute;
+    z-index: 12;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(240, 240, 240, 1);
+    padding: 16px;
+    background: white;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .card-affix-primary {
+        position: absolute;
+        padding: 0 16px;
+        height: 64px;
+        right: 0;
+        top: 0;
+        text-align: right;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.bigChartSty {
+    :global {
+        .ant-card-head-title {
+            display: inline-block;
+            flex: 1 1;
+            padding: 0 !important;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.showRangDate {
+    display: block;
+}
+@media screen and (max-width: 750px) {
+    .showRangDate {
+        display: none;
+    }
+}
+
+.tab {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}

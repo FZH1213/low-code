@@ -1,0 +1,100 @@
+/************ ant-card *************/
+.webroot{
+
+  .ant-card-headborder{
+    .ant-card-head{
+      border-bottom:1px solid rgba(240,240,240,1);
+    }
+  }
+
+  .ant-card-head{
+    border-bottom:0; padding:0 20px;
+    color: #30366f;
+    font-size: 15px;
+    font-weight: 700;
+    & + .ant-card-body{
+      padding-top:0
+    }
+    .ant-card-extra{
+      padding:0
+    }
+  }
+
+  .ant-card-body{ padding:16px 16px 16px 16px }
+  .ant-card-bordered{ 
+    border:0;
+    border-radius: 6px;
+   }
+  .ant-card-title-wrapper{
+    position:relative;
+    display:inline-flex;
+    display:-webkit-inline-flex;
+  }
+
+  /* 卡片标题扩展（并非ant原生类） */
+  .ant-card-title-text{
+    font-size:14px;
+    margin-bottom:unset
+  }
+  .ant-card-title-tip{
+    display:inline-flex;
+    align-items:center;
+    margin-left:5px;
+  }
+
+  /* 卡片辅助工具栏 */
+  .card-assist{
+    display:flex; display:-webkit-flex; display:-moz-flex;
+    position:relative;
+    //按钮栏（左侧）
+    .card-assist-buttons{
+      .ant-btn{
+        &:first-child{ margin-left:0 }
+        margin:0 4px
+      }
+    }
+
+    //其它辅助栏（右侧）
+    .card-assist-other{
+      flex:1;
+      display:flex;
+      justify-content:flex-end;
+    }
+  }
+
+  .card-corner-assist{
+    position:absolute;
+    right:0; top:0; padding:15px 20px;
+  }
+
+  .card-affix{
+    display:flex;
+    position:absolute;
+    z-index:12;
+    justify-content:flex-start;
+    border-top:1px solid rgba(240,240,240,1);
+    padding:16px;
+    background:white;
+    height:64px;
+    bottom:0; left:0; right:0;
+    .card-affix-primary{
+      position:absolute;
+      padding:0 16px;
+      height:64px;
+      right:0; top:0;
+      text-align:right;
+      display:flex;
+      align-items:center;
+    }
+  }
+
+  //卡片内容体采用flex布局
+  .wb-flex-card{
+    display:flex; display:-webkit-flex; display:-moz-flex;
+    .ant-card-body{
+      display:flex; display:-webkit-flex; display:-moz-flex;
+      flex:1;
+
+    }
+  }
+}

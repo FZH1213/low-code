@@ -1,0 +1,28 @@
+.gridfield-label, .gridfield-content{
+  display:inline-flex; align-items:center;
+}
+
+.gridfield-label{
+  color:#8C8C8C;
+  margin-right:8px
+}
+
+.gridfield-content{
+
+}
+
+.gridfield-col{
+  display:flex;
+  align-items:center;
+  border:1px solid #EAEEF5;
+  height:38px;
+  padding:0 10px;
+}
+
+.gridfield-col + .gridfield-col{
+  border-left:0;
+}
+
+.ant-row + .ant-row > .gridfield-col{
+  border-top:0;
+}

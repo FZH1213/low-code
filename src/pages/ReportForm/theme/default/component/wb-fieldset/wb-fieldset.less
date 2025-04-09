@@ -1,0 +1,91 @@
+//.webroot{
+
+  .wb-fieldset{
+    margin:24px 0; padding:0;
+    > legend{
+      margin:0 0 20px 0;
+      border:0;
+    }
+
+    &.wb-standard-margin, &.wb-super-margin{
+      margin:24px auto;
+    }
+
+    .wb-fieldset-legend{
+      border:0;
+    }
+
+    .wb-fieldset-content{
+      .ant-form-item{
+        display: flex;
+        box-sizing: border-box;
+        width: 90%;
+        margin-right:0;
+        margin-left:0;
+
+        & > .ant-form-item-label {
+          flex: 0 0 24%;
+          max-width:unset;
+        }
+
+        & > .ant-form-item-control {
+          display: inline-flex;
+          max-width:unset;
+        }
+      }
+
+      .ant-form-item-hidden{
+        display:none
+      }
+    }
+
+    .wb-fieldset-col-2 {
+
+      .ant-form-item {
+        display: inline-flex;
+        width: 46%;
+        margin-right:0;
+        margin-left:0;
+      }
+
+      .wb-fieldset-span-2 {
+        width: 92%;
+        & > .ant-form-item-label {
+          flex:0 0 12%
+        }
+        & > .ant-form-item-control {
+          //flex:0 0 80%
+        }
+      }
+    }
+  }
+
+  .wb-fieldset-title{
+    display:inline-block;
+    position:relative;
+    margin:0;
+    color:rgba(62, 128, 214, 1);
+    font-size:14px;
+    font-weight:bold;
+    z-index:1;
+    &:before{
+      position:relative;
+      content:' ';
+      z-index:0;
+      height:8px;
+      display:block;
+      background:rgba(220,186,104,0.2);
+      top:22px;
+      margin-top:-22px;
+    }
+  }
+
+  .wb-single-fieldset{
+    padding:0 24px;
+    width:38%;
+    .ant-form-item-label{
+      width:78px;
+      text-align:right;
+    }
+  }
+//}

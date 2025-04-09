@@ -1,0 +1,175 @@
+@import '~antd/es/style/themes/default.less';
+
+/* layout */
+.ant-breadcrumb a {
+  color: white !important;
+  &:hover {
+    cursor: text;
+  }
+}
+// 修改导航白色
+.ant-breadcrumb > span:last-child a {
+  color: white;
+}
+//导航栏分割条 白色
+.ant-breadcrumb-separator {
+  // color: white !important;
+}
+
+
+  //菜单下拉框白底黑字
+  .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
+    color:black;
+    background-color: white;
+  }
+  .ant-menu-dark .ant-menu-submenu-selected{
+    color:black
+  }
+  .ant-menu-dark .ant-menu-submenu-active, .ant-menu-dark .ant-menu-submenu-open{
+    color:black
+  }
+
+  .ant-menu-dark .ant-menu-item > span > a{
+    color:black
+  }
+  .ant-menu-dark .ant-menu-submenu-title:hover{
+    color:black;
+    
+  }
+  // .ant-menu-dark .ant-menu-item-only-child:hover{
+  //   color:black
+  // }
+  // .ant-menu-dark .ant-menu-item:hover{
+  //   color:black
+  // }
+  .ant-menu-dark .ant-menu-item > span > a:hover{
+    color:black
+  }
+  // .ant-menu-dark .ant-menu-horizontal > .ant-menu-item:hover{
+  //   background-color: none;
+  // }
+
+.webroot {
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .ant-menu-inline .ant-menu-item::after {
+    border-right: none;
+  }
+  .ant-pro-sider.ant-layout-sider-light .ant-menu-item-selected a,
+  .ant-pro-sider.ant-layout-sider-light .ant-menu-item a:hover {
+    color: #1890ff;
+  }
+  .ant-pro-sider.ant-layout-sider-light .ant-menu-item-selected a {
+    color: rgba(0, 0, 0, 1);
+  }
+ 
+  //顶部菜单
+  .ant-layout-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px !important;
+    background-image: url('banner.png') !important;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    //导航菜单外观
+    .ant-menu {
+      display: flex;
+      align-items: center;
+      .ant-menu-item {
+        border-bottom: 0;
+      }
+      .ant-pro-menu-item {
+        color: #d9d9d9;
+        font-size: 14px;
+      }
+      //选中一级菜单
+      .ant-menu-item-selected {
+        .ant-pro-menu-item {
+          color: #dcba68;
+          font-weight: bold;
+        }
+      }
+      .ant-menu-item-selected ::after {
+        background-color: brown !important;
+        border-right: 0px solid #ffffff !important;
+      }
+
+      /*选中子级菜单*/
+      .ant-menu-submenu-selected {
+        .ant-pro-menu-item {
+          // color: #dcba68;
+          // font-weight: bold;
+          // font-size: 100px !important;
+        }
+      }
+
+      /* 菜单隐藏符号（省略号） */
+      .ant-menu-overflowed-submenu {
+        color: #d9d9d9;
+      }
+
+
+    }
+
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active {
+      border: 0;
+    }
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+    .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+      margin-top: 0;
+    }
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu {
+      border-bottom: 0;
+    }
+
+    .ant-pro-top-nav-header {
+      .ant-pro-top-nav-header-logo {
+        display: flex;
+        align-items: center;
+        img {
+          width: 126px;
+          height: 28px;
+        }
+        h1 {
+          color: #dcba68;
+          font-weight: bold;
+          font-size: 16px;
+          font-family: 'Weibei SC Bold';
+        }
+      }
+      .ant-pro-top-nav-header-menu {
+        padding: 0 17px 0 60px;
+      }
+      .ant-menu-submenu.ant-menu-submenu-horizontal {
+        height: unset;
+      }
+    }
+  }
+
+  .ant-layout-content {
+    &.ant-pro-basicLayout-content {
+      z-index: 2;
+      margin: 53px 0 0 0;
+      // 隐藏滚动条的内层容器的样式
+      // width: calc(100vw + 17px);
+      overflow-y: overlay;
+      　　 .ant-pro-page-container {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+
+        // background: url('banner.png') no-repeat;
+        // background-size: 100% 350px;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+/************ ant-table ************/
+
+.wp-table{
+  .ant-table-small .ant-table-thead > tr > th,
+  .ant-table-thead > tr > th{
+    background-color:#f1f1f1;
+    color:#262626;
+    height:30px;
+    padding:2px 16px;
+  }
+}
+
+.ant-table-tbody {
+  > tr{
+    &:nth-child(even) > td{
+      background:rgba(248,251,255,1);
+    }
+    &.ant-table-row:hover{
+      > td{
+        background:unset
+      }
+      &:nth-child(odd) > td, &:nth-child(even) > td{
+        background: rgba(236,246,255,1);
+      }
+    }
+    &.ant-table-row-selected{
+      > td{
+        background:rgba(236,246,255,1);
+      }
+      &:hover {
+        > td{
+          background:#ECF6FF
+        }
+        &:nth-child(even) > td{
+          background:#ECF6FF
+        }
+      }
+    }
+  }
+}
+
+.wp-table{
+
+  .ant-table-tbody {
+    > tr {
+      > td {
+        padding: 6px 16px;
+        height: 30px;
+      }
+    }
+  }
+
+  .ant-table.ant-table-bordered > .ant-table-container{
+    border:1px solid rgba(231,236,246,1);
+    border-right:0;
+    border-bottom:0;
+    & > .ant-table-content > table > thead > tr > th,
+    & > .ant-table-header > table > thead > tr > th,
+    & > .ant-table-content > table > tbody > tr > td,
+    & > .ant-table-header > table > tbody > tr > td,
+    & > .ant-table-body > table > tbody > tr > td,
+    & > .ant-table-content > table > tfoot > tr > th,
+    & > .ant-table-header > table > tfoot > tr > th,
+    & > .ant-table-body > table > tfoot > tr > th,
+    & > .ant-table-content > table > tfoot > tr > td,
+    & > .ant-table-header > table > tfoot > tr > td,
+    & > .ant-table-body > table > tfoot > tr > td {
+      border-right: 1px solid rgba(231, 236, 246, 1);
+    }
+
+  }
+
+  .ant-table-bordered{
+    & .ant-table-tbody > tr > td{
+      border-bottom:1px solid rgba(231,236,246,1);
+    }
+  }
+
+  //表头排序
+  .ant-table-column-sorters{
+    padding:2px 16px
+  }
+
+  &.tree-table .ant-table.ant-table-bordered > .ant-table-container{
+    & > .ant-table-content > table > tbody > tr.ant-table-row-level-0 > td{
+      border-right:0;
+      &:last-child{
+        border-right:1px solid rgba(231, 236, 246, 1);
+      }
+    }
+  }
+}
+
+.wp-table-btn-group{
+  position:absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  left:0; right:0; top:0; bottom:0;
+  .ant-btn{
+    margin:0;
+    min-width:unset;
+    padding-left:9px;
+    padding-right:9px;
+  }
+  a[type="link"]{
+    padding-left:5px;
+    padding-right:5px;
+    margin-left:5px;
+    margin-right:5px;
+  }
+}
+
+.wp-table-opera{
+  .ant-btn-link{
+    width:auto;
+    min-width:unset;
+    margin-left:unset;
+    margin-right:unset;
+  }
+}

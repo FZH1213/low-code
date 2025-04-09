@@ -1,0 +1,67 @@
+.temp {
+  margin: 0 12px;
+
+  .tabContainer {
+    overflow-y: scroll;
+  }
+
+  .tab {
+    display: flex;
+    height: 100%;
+    background: white;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    border-radius: 5px;
+    margin: 24px 0 30px 12px;
+  }
+
+  .card {
+    width: 300px;
+    height: 220px;
+    margin-left: 16px;
+  }
+
+  :global {
+    .ant-card-cover {
+      height: 70%;
+    }
+
+    .ant-card-cover>* {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .ant-tabs-tabpane {
+      display: flex;
+    }
+  }
+}
+
+.sql {
+  :global {
+    .ant-input-group-addon {
+      display: none;
+    }
+  }
+
+  .attr {
+    width: 96%;
+
+    :global {
+      .ant-table-cell .ant-table-cell-ellipsis {
+        padding: none;
+      }
+    }
+  }
+}
+
+.ReportFormManageBtn {
+  margin-right: 12px;
+}
+
+.ReportFormManageDrawer {
+  display: flex;
+  flex-direction: row-reverse;
+}

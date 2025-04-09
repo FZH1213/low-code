@@ -1,0 +1,83 @@
+.station{
+    &:before{
+      content:'，';
+      display:inline;
+      margin-right:4px;
+    }
+    &:first-child{
+      display:none
+    }
+  }
+  .editable-cell {
+    position: relative;
+  }
+  
+  .editable-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+  
+  .editable-row:hover .editable-cell-value-wrap {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 4px 11px;
+  }
+  
+  [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+    border: 1px solid #434343;
+  }
+  .ant-pro-card-body {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0px;
+  }
+  .cardAffix{
+    display:flex;
+    position:absolute;
+    z-index:12;
+    justify-content:flex-end;
+    border-top:1px solid rgba(240,240,240,1);
+    padding:16px;
+    background:white;
+    height:64px;
+    bottom:0; left:0; right:0;
+    .card-affix-primary{
+      position:absolute;
+      padding:0 16px;
+      height:64px;
+      right:0; top:0;
+      text-align:right;
+      display:flex;
+      align-items:center;
+    }
+  }
+  .spinCss {
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .row_label {
+     
+    :global {
+      .ant-row {
+        width: 90% !important; 
+      }
+      @media (max-width: 575px){
+        .ant-form-item-label {
+          flex: 0 0 100% !important;
+        }
+      }
+      .ant-form-item-label>label {
+          height: auto !important;
+          // word-spacing: normal;
+          white-space: normal;
+      }
+      .ant-form-item-control-input .ant-row {
+        width: 100% !important; 
+      }
+    }
+  }
+  

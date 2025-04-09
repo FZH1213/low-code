@@ -1,0 +1,268 @@
+@media only screen and (max-width: 576px) {
+    .hidden {
+        display: none;
+    }
+
+    .webroot .card-affix {
+        position: fixed;
+    }
+
+    .ant-btn.long {
+        // float: right;
+        padding: 0;
+    }
+}
+
+// .webroot .ant-card-body {
+//   padding-left: 0px;
+// }
+.row_label {
+
+    :global {
+        .ant-row {
+            width: 90% !important;
+        }
+
+        // .ant-form-item-row{
+        //   width: 90% !important; 
+        // }
+        @media (max-width: 575px) {
+            .ant-form-item-label {
+                flex: 0 0 100% !important;
+            }
+        }
+
+        .ant-form-item-label>label {
+            height: auto !important;
+            // word-spacing: normal;
+            white-space: normal;
+        }
+
+        .ant-form-item-control-input .ant-row {
+            width: 100% !important;
+        }
+    }
+}
+
+.shortpad {
+    :global {
+        .ant-card-body {
+            padding-bottom: 0 !important;
+            padding-top: 0px !important;
+            padding-left: 0px !important;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: 5%;
+}
+
+.left {
+    width: 180px;
+    min-height: calc(100vh - 145px);
+    background: #ffffff;
+    border-radius: 2px;
+
+    .left-top-title {
+        font-size: 16px;
+        font-family: PingFangSC, PingFangSC-Semibold;
+        font-weight: 600;
+        padding: 10px 10px;
+    }
+
+    .nav-item {
+        width: 120px;
+        height: 42px;
+        font-size: 12px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: center;
+        color: #8c8c8c;
+        line-height: 42px;
+        border-left: 2px solid white;
+    }
+
+    .nav-item2 {
+        width: 120px;
+        height: 42px;
+        font-size: 12px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: center;
+        color: #3e80d6;
+        background: rgba(62, 128, 214, 0.1);
+        border-left: 2px solid #3e80d6;
+        line-height: 42px;
+    }
+}
+
+.foot {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 24px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.footRight {
+    display: flex;
+    align-items: center;
+}
+
+.footLeft {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 132px;
+}
+
+.footRightBtn {
+    width: 96px;
+    height: 32px;
+    background: rgba(62, 128, 214, 0.1);
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: center;
+    color: #3e80d6;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.footRightBtn2 {
+    width: 96px;
+    height: 32px;
+    background: #3e80d6;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.footRightBtn3 {
+    width: 96px;
+    height: 32px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+    color: #595959;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.footBtnRight {
+    margin-left: 17px;
+}
+
+.footRightLine {
+    margin: 0 7.5px;
+    width: 1px;
+    height: 20px;
+    background-color: #d9d9d9;
+}
+
+.plenipotentiaryTransferModalTips {
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: left;
+    color: #ff6a6a;
+    margin-left: 98px;
+}
+
+.right {
+    //width: calc(100vw - 190px);
+    flex: 1;
+    // min-height: calc(100vh - 145px);
+    // min-height: 37.5vh;
+    // :global {
+    //   .ant-card-body {
+    //     min-height: 37.5vh;
+    //   }
+    // }
+}
+
+// #form{
+//   width: 100%;
+// }
+// 使待办区进去的页面，右侧form表单区居中（即tabs-content区）
+.ant-tabs-left>.ant-tabs-content-holder>.ant-tabs-content>.ant-tabs-tabpane {
+    // padding-right: 5%;
+}
+
+.taskViewMargin {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spinCss {
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.padding {
+    :global {
+        .ant-card-body {
+            padding-bottom: 0;
+        }
+
+        .ant-table-body {
+            border-bottom: 1px solid #e7ecf6;
+        }
+
+        .ant-table-tbody>tr:nth-child(even)>td {
+            background-color: white;
+        }
+
+        .ant-table-tbody>tr:nth-child(odd)>td {
+            background-color: #f8fbff;
+        }
+    }
+}
+
+.tankTodoList {
+    :global {
+        .ant-pagination-total-text {
+            flex: auto;
+        }
+
+        .ant-table-pagination.ant-pagination {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+//上传文件
+.card {
+    :global {
+        .adm-card-body {
+            //  padding: 12px 0; 
+            padding: 0 0 !important;
+        }
+    }
+}

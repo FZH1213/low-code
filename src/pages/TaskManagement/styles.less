@@ -1,0 +1,31 @@
+.station {
+  &:before {
+    display: inline;
+    margin-right: 4px;
+    content: '，';
+  }
+  &:first-child {
+    display: none;
+  }
+}
+.ivu-badge-status-dot {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.ivu-badge-status-error {
+  background-color: #ed4014;
+}
+.ivu-badge-status-success {
+  background-color: #19be6b;
+}
+.ivu-badge-status-text {
+  display: inline-block;
+  margin-left: 6px;
+  color: #515a6e;
+  font-size: 12px;
+}
