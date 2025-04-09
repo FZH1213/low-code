@@ -1,0 +1,19 @@
+{
+    "navTheme": "dark",
+    "primaryColor": "#1890ff",
+    "layout": "side",
+    "contentWidth": "Fluid",
+    "fixedHeader": true,
+    "fixSiderbar": true,
+    "colorWeak": false,
+    "title": "产品中心",
+    "pwa": false,
+    "footerRender": false,
+    "logo": "/icons/智算信息.png",
+    "iconfontUrl": "",
+    "menu": {
+        "locale": false
+    },
+    "loginLogo":"/icons/智算信息1.png"
+}
+
